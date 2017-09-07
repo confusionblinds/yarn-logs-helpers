@@ -16,5 +16,7 @@ if $(which yarn &> /dev/null); then
 
     # Grab the first row, assume they're all equal; send to designated file.
     head -n 1 > "$yarn_cluster_id_file"
+    
+    echo $yarn_cluster_id_file
 
 fi
